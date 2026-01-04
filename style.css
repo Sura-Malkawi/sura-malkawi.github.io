@@ -510,3 +510,101 @@ footer
     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
     transition: 0.3s ease;
 }
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+@media (max-width: 1024px)
+{
+    .hero,
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .experience-section,
+    .contact-section
+    {
+        padding: 40px 60px;
+    }
+
+    .projects-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .hero
+    {
+        padding: 40px 25px;
+    }
+
+    .hero-header
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-avatar
+    {
+        width: 140px;
+        height: 140px;
+    }
+
+    .description
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-buttons
+    {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .experience-section,
+    .contact-section
+    {
+        padding: 40px 25px;
+    }
+
+    .skills-grid,
+    .projects-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-header
+    {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .experience-date
+    {
+        font-size: 13px;
+    }
+
+    .contact-icons
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer
+    {
+        font-size: 13px;
+    }
+}
