@@ -1,0 +1,512 @@
+/* =======================
+   RESET & BODY
+======================= */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body
+{
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.7;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero
+{
+    background-color: #e6f4ff;
+    padding: 70px 110px;
+}
+
+.hero-content
+{
+    max-width: 900px;
+}
+
+.hero-header
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-avatar
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2563eb;
+}
+
+.hero-title h1
+{
+    font-size: 40px;
+    margin: 0;
+    color: #0f172a;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.subtitle
+{
+    font-size: 18px;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.description
+{
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hero-buttons
+{
+    display: flex;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.btn
+{
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn.primary
+{
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn.primary:hover
+{
+    background-color: #184ee2;
+}
+
+.btn.outline
+{
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn.outline:hover
+{
+    background-color: #2563eb;
+    color: #ffffff;
+}
+.hero-buttons .btn.outline:last-child
+{
+    border: 2px solid #2563eb;
+    
+}
+.hero-buttons .btn.outline:last-child
+{
+    opacity: 0.9;
+}
+
+/* =======================
+   ABOUT SECTION
+======================= */
+.about-section
+{
+    background-color: #ffffff;
+    padding: 40px 110px;
+}
+
+.about-section h2
+{
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-section h2::after
+{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.about-box
+{
+    background-color: #ffffff;
+    padding: 40px 45px;
+    border-radius: 14px;
+    max-width: 1100px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border-left: 6px solid #2563eb;
+}
+
+.about-box p
+{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+.about-box p:last-child
+{
+    margin-bottom: 0;
+}
+
+/* =======================
+   SKILLS SECTION
+======================= */
+.skills-section
+{
+    background-color: #f8fafc;
+    padding: 40px 110px;
+}
+
+.skills-section h2
+{
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills-section h2::after
+{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.skills-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.skill-card
+{
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border-left: 5px solid #2563eb;
+}
+
+.skill-card h3
+{
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #0f172a;
+}
+
+.skill-card ul
+{
+    list-style: none;
+}
+
+.skill-card li
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #334155;
+    position: relative;
+    padding-left: 18px;
+}
+
+.skill-card li::before
+{
+    content: "•";
+    color: #2563eb;
+    position: absolute;
+    left: 0;
+}
+
+/* =======================
+   PROJECTS SECTION
+======================= */
+.projects-section
+{
+    background-color: #ffffff;
+    padding: 40px 110px;
+}
+
+.projects-section h2
+{
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.projects-section h2::after
+{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.projects-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card
+{
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border-left: 5px solid #2563eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3
+{
+    font-size: 20px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.project-card p
+{
+    font-size: 16px;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-card span
+{
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.project-card a
+{
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-card a:hover
+{
+    text-decoration: underline;
+}
+
+/* =======================
+   EXPERIENCE SECTION
+======================= */
+.experience-section
+{
+    background-color: #f8fafc;
+    padding: 40px 110px;
+}
+.experience-section h2
+{
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 30px;
+    position: relative;
+}
+.experience-section h2::after
+{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.experience-box
+{
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 14px;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    margin-bottom: 25px;
+}
+.experience-box:last-child
+{
+    margin-bottom: 0;
+}
+.experience-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.experience-left h3
+{
+    font-size: 20px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+.experience-left .department
+{
+    font-size: 14px;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.experience-date
+{
+    font-size: 14px;
+    color: #9ea8b5;
+    white-space: nowrap;
+}
+
+/* =======================
+   CONTACT SECTION
+======================= */
+.contact-section
+{
+    background-color: #e6f4ff;
+    padding: 20px 110px;
+}
+
+.contact-section h2
+{
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact-section h2::after
+{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.contact-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item
+{
+    font-size: 16px;
+    color: #334155;
+}
+
+.contact-label
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.contact-item a
+{
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-item a:hover
+{
+    text-decoration: underline;
+}
+
+.contact-icons
+{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.contact-icon
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2563eb;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.contact-icon i
+{
+    font-size: 18px;
+}
+
+.contact-icon:hover
+{
+    color: #0c48cb;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer
+{
+    background-color: #e6f4ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+/* =======================
+   CARD HOVER EFFECT
+======================= */
+.skill-card:hover,
+.project-card:hover,
+.experience-box:hover,
+.about-box:hover
+{
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+    transition: 0.3s ease;
+}
