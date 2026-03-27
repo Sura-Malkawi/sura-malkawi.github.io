@@ -509,6 +509,10 @@ footer
 
 @media (max-width: 768px)
 {
+   .navbar
+    {
+        display: none;
+    }
     .hero
     {
         padding: 40px 25px;
@@ -646,31 +650,4 @@ footer
     font-size: 22px;
     color: #38bdf8;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 25px;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #0b1a35;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px 0;
-        display: none;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
 }
